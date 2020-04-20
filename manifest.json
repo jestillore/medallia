@@ -1,0 +1,22 @@
+{
+  "name": "Medallia",
+  "description": "Medaallia",
+  "version": "0.1",
+  "permissions": [
+    "activeTab",
+    "http://*.medallialocal.staging.wpengine.com/*",
+    "https://*.medallialocal.staging.wpengine.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.medallialocal.staging.wpengine.com/*",
+        "https://*.medallialocal.staging.wpengine.com/*"
+      ],
+      "js": [
+        "medallia.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
